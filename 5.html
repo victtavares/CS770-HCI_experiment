@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Experiment - Group 9</title>
+  <script type="text/javascript" src="canvasjs.min.js"></script>
+  <script type="text/javascript" src="aux.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="graphGenerator.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script type="text/javascript">
+  //3 Spikes 6,15,22
+  var data5 = [{"x":0,"y":87},{"x":1,"y":35},{"x":2,"y":87},{"x":3,"y":67},{"x":4,"y":55},{"x":5,"y":30},{"x":6,"y":202},{"x":7,"y":80},{"x":8,"y":38},{"x":9,"y":31},{"x":10,"y":66},{"x":11,"y":80},{"x":12,"y":67},{"x":13,"y":80},{"x":14,"y":53},{"x":15,"y":200},{"x":16,"y":58},{"x":17,"y":84},{"x":18,"y":45},{"x":19,"y":33},{"x":20,"y":37},{"x":21,"y":76},{"x":22,"y":215},{"x":23,"y":76},{"x":24,"y":44},{"x":25,"y":76},{"x":26,"y":66},{"x":27,"y":56},{"x":28,"y":69},{"x":29,"y":80},{"x":30,"y":40},{"x":31,"y":49},{"x":32,"y":73},{"x":33,"y":56},{"x":34,"y":37}];
+  //3 spikes = 10,25,32
+  var data1 = [{"x":0,"y":79},{"x":1,"y":68},{"x":2,"y":49},{"x":3,"y":72},{"x":4,"y":54},{"x":5,"y":59},{"x":6,"y":71},{"x":7,"y":39},{"x":8,"y":90},{"x":9,"y":71},{"x":10,"y":202},{"x":11,"y":64},{"x":12,"y":63},{"x":13,"y":88},{"x":14,"y":38},{"x":15,"y":36},{"x":16,"y":72},{"x":17,"y":40},{"x":18,"y":58},{"x":19,"y":34},{"x":20,"y":45},{"x":21,"y":30},{"x":22,"y":66},{"x":23,"y":89},{"x":24,"y":50},{"x":25,"y":203},{"x":26,"y":58},{"x":27,"y":63},{"x":28,"y":76},{"x":29,"y":70},{"x":30,"y":74},{"x":31,"y":86},{"x":32,"y":200},{"x":33,"y":54},{"x":34,"y":58}];
+
+  //3 spikes = 12,18,27
+  var data3 = [{"x":0,"y":33},{"x":1,"y":76},{"x":2,"y":64},{"x":3,"y":36},{"x":4,"y":44},{"x":5,"y":46},{"x":6,"y":72},{"x":7,"y":69},{"x":8,"y":41},{"x":9,"y":70},{"x":10,"y":60},{"x":11,"y":48},{"x":12,"y":202},{"x":13,"y":86},{"x":14,"y":31},{"x":15,"y":59},{"x":16,"y":62},{"x":17,"y":67},{"x":18,"y":205},{"x":19,"y":42},{"x":20,"y":53},{"x":21,"y":73},{"x":22,"y":41},{"x":23,"y":34},{"x":24,"y":72},{"x":25,"y":83},{"x":26,"y":56},{"x":27,"y":206},{"x":28,"y":90},{"x":29,"y":57},{"x":30,"y":63},{"x":31,"y":72},{"x":32,"y":46},{"x":33,"y":49},{"x":34,"y":69}];
+
+  //3 spikes = 5,14,25
+  var data4 = [{"x":0,"y":75},{"x":1,"y":42},{"x":2,"y":48},{"x":3,"y":35},{"x":4,"y":78},{"x":5,"y":200},{"x":6,"y":74},{"x":7,"y":88},{"x":8,"y":56},{"x":9,"y":83},{"x":10,"y":30},{"x":11,"y":60},{"x":12,"y":69},{"x":13,"y":89},{"x":14,"y":201},{"x":15,"y":39},{"x":16,"y":53},{"x":17,"y":37},{"x":18,"y":32},{"x":19,"y":39},{"x":20,"y":67},{"x":21,"y":32},{"x":22,"y":34},{"x":23,"y":36},{"x":24,"y":71},{"x":25,"y":201},{"x":26,"y":90},{"x":27,"y":82},{"x":28,"y":66},{"x":29,"y":36},{"x":30,"y":82},{"x":31,"y":79},{"x":32,"y":33},{"x":33,"y":41},{"x":34,"y":78}];
+  //3 spikes = 11,17,23
+  var data2 = [{"x":0,"y":59},{"x":1,"y":38},{"x":2,"y":89},{"x":3,"y":80},{"x":4,"y":64},{"x":5,"y":32},{"x":6,"y":75},{"x":7,"y":63},{"x":8,"y":58},{"x":9,"y":78},{"x":10,"y":55},{"x":11,"y":202},{"x":12,"y":34},{"x":13,"y":71},{"x":14,"y":40},{"x":15,"y":55},{"x":16,"y":82},{"x":17,"y":204},{"x":18,"y":77},{"x":19,"y":46},{"x":20,"y":67},{"x":21,"y":66},{"x":22,"y":79},{"x":23,"y":205},{"x":24,"y":80},{"x":25,"y":88},{"x":26,"y":41},{"x":27,"y":73},{"x":28,"y":40},{"x":29,"y":37},{"x":30,"y":76},{"x":31,"y":32},{"x":32,"y":78},{"x":33,"y":70},{"x":34,"y":87}];
+
+
+
+  window.onload = function () {
+    generateGraph(data1,"chart1",false);
+    generateGraph(data2,"chart2",false);
+    generateGraph(data3,"chart3",false);
+    generateGraph(data4,"chart4",false);
+    generateGraph(data5,"chart5",true);
+  }
+  </script>
+
+</head>
+<body class="main">
+  <div id="alert"></div>
+  <div id = "container1" class="graph51">
+    <div id="chart1" style="height: 250px; width:250px;"></div>
+    <button type="button" id ="1" onclick="addSpike('chart1','5.html')" class="button">Chart 1 - Spike</button>
+  </div> 
+  <div id ="container2" class="graph52">
+    <div id="chart2" style="height: 250px; width:250px;"></div>
+    <button type="button" id ="2" onclick="addSpike('chart2','5.html')" class="button">Chart 2 - Spike</button>
+  </div>
+    <div id ="container3" class="graph64">
+    <div id="chart3" style="height: 250px; width:250px;"></div>
+    <button type="button" id ="2" onclick="addSpike('chart3','5.html')" class="button">Chart 3 - Spike</button>
+  </div>
+  <div id ="container4" class="graph65">
+    <div id="chart4" style="height: 250px; width:250px;"></div>
+    <button type="button" id ="2" onclick="addSpike('chart4','5.html')" class="button">Chart 4 - Spike</button>
+  </div>
+    <div id ="container5" class="graph66">
+    <div id="chart5" style="height: 250px; width:250px;"></div>
+    <button type="button" id ="2" onclick="addSpike('chart5','5.html')" class="button">Chart 5 - Spike</button>
+  </div>
+</body>
+</html>

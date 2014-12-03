@@ -1,0 +1,198 @@
+.main {
+  height: 850px;
+  width: 1280px;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.centerBox {
+    position: absolute;
+    left: 500px;
+    top: 250px;
+}
+
+.textBox {
+    position: absolute;
+    left: 550px;
+    top:  350px;
+    height: 250px;
+    width: 250px;
+
+}
+
+.buttonMain {
+    margin-left: 35%;
+    margin-right: auto;
+    height: 40px;
+    margin-top: 20px;
+}
+
+/* -------------------- page 1 and 9  --------------------*/
+
+.graph11 {
+    position: absolute;
+    left: 500px;
+    top: 250px;
+
+}
+
+/* -------------------- page 2 and 10  --------------------*/
+.graph21 {
+    position: absolute;
+    left: 500px;
+    top: 70px;
+
+}
+
+.graph22 {
+    position: absolute;
+    left: 500px;
+    bottom: 100px;
+
+}
+
+/* -------------------- page 3 and 11  --------------------*/
+.graph31 {
+    position: absolute;
+    left: 500px;
+    top: 100px;
+
+}
+
+
+/* -------------------- page 4 and 12  --------------------*/
+.graph43 {
+    position: absolute;
+    left: 350px;
+    bottom: 100px;
+}
+
+.graph44 {
+    position: absolute;
+    left: 640px;
+    bottom: 100px;
+
+}
+
+
+/* -------------------- page 5 and 13  --------------------*/
+.graph51 {
+    position: absolute;
+    left: 350px;
+    top: 100px;
+}
+
+.graph52 {
+    position: absolute;
+    left: 640px;
+    top: 100px;
+
+}
+
+
+/* -------------------- page 6 and 14  --------------------*/
+
+.graph64 {
+    position: absolute;
+    left: 200px;
+    bottom: 100px;
+}
+
+.graph65 {
+    position: absolute;
+    left: 490px;
+    bottom: 100px;
+
+}
+
+.graph66 {
+  position: absolute;
+    left: 780px;
+    bottom: 100px;
+
+}
+
+
+/* -------------------- page 7 and 15  --------------------*/
+.graph71 {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
+
+.graph72 {
+    position: absolute;
+    left: 490px;
+    top: 100px;
+
+}
+
+.graph73 {
+  position: absolute;
+    left: 780px;
+    top: 100px;
+
+}
+
+
+
+/* -------------------- page 8 and 16  --------------------*/
+.graph81 {
+    position: absolute;
+    left: 70px;
+    top: 100px;
+}
+
+.graph82 {
+    position: absolute;
+    left: 370px;
+    top: 100px;
+
+}
+
+.graph83 {
+  position: absolute;
+    left: 670px;
+    top: 100px;
+
+}
+
+.graph84 {
+position: absolute;
+    left: 970px;
+    top: 100px;
+}
+
+.graph85 {
+  position: absolute;
+    left: 70px;
+    bottom: 100px;
+
+}
+
+.graph86 {
+    position: absolute;
+    left: 370px;
+    bottom: 100px;
+}
+
+.graph87 {
+    position: absolute;
+    left: 670px;
+    bottom: 100px;
+
+}
+
+.graph88{   
+  position: absolute;
+    left: 970px;
+    bottom: 100px;
+
+}
+
+.button {
+    margin-left: 35%;
+    margin-right: auto;
+    height: 40px;
+}
+

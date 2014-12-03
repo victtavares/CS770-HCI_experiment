@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Experiment - Group 9</title>
+  <script type="text/javascript" src="canvasjs.min.js"></script>
+  <script type="text/javascript" src="aux.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="graphGenerator.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script type="text/javascript">
+  //3 Spikes 7,16,23 //5,16,20,30
+  var data1 = [{"x":0,"y":69},{"x":1,"y":43},{"x":2,"y":54},{"x":3,"y":53},{"x":4,"y":61},{"x":5,"y":202},{"x":6,"y":68},{"x":7,"y":75},{"x":8,"y":65},{"x":9,"y":54},{"x":10,"y":37},{"x":11,"y":80},{"x":12,"y":74},{"x":13,"y":65},{"x":14,"y":64},{"x":15,"y":84},{"x":16,"y":201},{"x":17,"y":63},{"x":18,"y":69},{"x":19,"y":88},{"x":20,"y":204},{"x":21,"y":48},{"x":22,"y":45},{"x":23,"y":50},{"x":24,"y":37},{"x":25,"y":66},{"x":26,"y":38},{"x":27,"y":33},{"x":28,"y":78},{"x":29,"y":49},{"x":30,"y":205},{"x":31,"y":36},{"x":32,"y":83},{"x":33,"y":73},{"x":34,"y":86}]
+
+
+
+  window.onload = function () {
+    generateGraph(data1,"chart1",false);
+  }
+  </script>
+
+</head>
+<body class="main">
+  <div id="alert"></div>
+  <div id = "container1" class="graph11">
+    <div id="chart1" style="height: 250px; width:250px;" ></div>
+    <button type="button" id ="1" class="button">Chart 1 - Spike</button><br>
+    <a href="main.html" class="buttonMain">Return</a>
+  </div>
+</body>
+</html>
